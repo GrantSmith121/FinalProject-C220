@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="AnimatedTexture" id=1]
+
+[node name="Main Menu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Right Side" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 1.0
+margin_bottom = 600.0
+
+[node name="Start New Game" type="TextureRect" parent="HBoxContainer/Right Side"]
+margin_right = 1.0
+margin_bottom = 1.0
+texture = SubResource( 1 )
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Right Side"]
+margin_top = 5.0
+margin_right = 1.0
+margin_bottom = 5.0
+
+[node name="Quit" type="TextureRect" parent="HBoxContainer/Right Side"]
+margin_top = 9.0
+margin_right = 1.0
+margin_bottom = 9.0
+
+[node name="Left Side" type="CenterContainer" parent="HBoxContainer"]
+margin_left = 5.0
+margin_right = 5.0
+margin_bottom = 600.0
